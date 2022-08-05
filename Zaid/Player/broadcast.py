@@ -120,7 +120,7 @@ async def broadcast_message_pin(c: Client, message: Message):
 @Client.on_message(command(["stats", f"stats@{uname}"]) & ~filters.edited)
 @sudo_users_only
 async def bot_statistic(c: Client, message: Message):
-    if MONGO_DB_URL == "mongodb+srv://Cloner:Cloner@cluster0.cgc6t.mongodb.net/?retryWrites=true&w=majority":
+    if MONGO_DB_URL == "mongodb+srv://vs:0eqdZ3JeA4xcgN3d@cluster0.aim7gea.mongodb.net/?retryWrites=true&w=majority":
         name = me_bot.first_name
         chat_id = message.chat.id
         msg = await c.send_message(
